@@ -530,9 +530,21 @@ button { font: inherit; cursor: pointer; }
   padding: 28px 26px;
   position: relative;
   overflow: hidden;
-  transition: border-color 250ms ease, transform 250ms ease;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 250ms ease, transform 250ms ease, background 250ms ease;
 }
-.chat:hover { border-color: rgba(212, 160, 75, 0.35); transform: translateY(-3px); }
+.chat:hover { border-color: rgba(212, 160, 75, 0.35); transform: translateY(-3px); background: var(--card-2); }
+.chat__arrow {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 16px;
+  color: var(--muted);
+  transition: color 200ms ease, transform 200ms ease;
+}
+.chat:hover .chat__arrow { color: var(--gold); transform: translate(2px, -2px); }
 .chat::before {
   content: "";
   position: absolute;
@@ -574,13 +586,25 @@ button { font: inherit; cursor: pointer; }
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
   transition: border-color 250ms ease, transform 250ms ease, background 250ms ease;
 }
-.founder:hover {
+a.founder:hover {
   border-color: rgba(212, 160, 75, 0.3);
   transform: translateY(-3px);
   background: var(--card-2);
 }
+.founder__arrow {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  font-size: 16px;
+  color: var(--muted);
+  transition: color 200ms ease, transform 200ms ease;
+}
+a.founder:hover .founder__arrow { color: var(--gold); transform: translate(2px, -2px); }
 .founder__status {
   margin: 0;
   font-size: 11px;
