@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extra Shot NYC — Everyone you need to meet is just two coffees away.</title>
+  <meta name="description" content="A weekly coffee chat series with NYC's most interesting founders. Two German grad students at Columbia, one city, one espresso at a time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#top" class="nav__brand" aria-label="Extra Shot NYC home">
+      <img class="nav__bean" src="extrashot-bean.svg" alt="" />
+      <span>Extra Shot NYC</span>
+    </a>
+    <div class="nav__links">
+      <a href="#what">What</a>
+      <a href="#who">Who</a>
+      <a href="#counter">Counter</a>
+      <a href="#founders">Founders</a>
+      <a href="https://instagram.com/extrashotnyc" target="_blank" rel="noopener" class="nav__ig">@extrashotnyc</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="steam" aria-hidden="true">
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+      <span class="steam__wisp"></span>
+    </div>
+
+    <div class="hero__inner">
+      <img class="hero__bean" src="extrashot-bean.svg" alt="" aria-hidden="true" />
+      <p class="hero__eyebrow">Extra Shot NYC</p>
+
+      <h1 class="hero__headline">
+        <span id="typewriter" class="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+      </h1>
+
+      <p class="hero__sub" id="heroSub">
+        A weekly coffee chat series with NYC's most interesting founders.
+      </p>
+
+      <a class="btn btn--gold" id="heroCta" href="https://instagram.com/extrashotnyc" target="_blank" rel="noopener">
+        Watch on Instagram
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>
+        <p>scroll</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- WHAT WE DO -->
+  <section id="what" class="section section--what reveal">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">What we do</p>
+        <h2 class="h2">No networking events. No small talk. Just coffee.</h2>
+        <p class="lede">
+          Every week, we pick a founder in New York, show up at their office with their coffee order, and have a real conversation.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M9 16h18v10a6 6 0 0 1-6 6h-6a6 6 0 0 1-6-6V16Z" stroke="currentColor" stroke-width="1.6" fill="none"/>
+              <path d="M27 19h2a4 4 0 0 1 0 8h-2" stroke="currentColor" stroke-width="1.6" fill="none"/>
+              <path d="M14 8c0 2 2 2 2 4M19 8c0 2 2 2 2 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Coffee Chats</h3>
+          <p>One founder, one drink order, one honest conversation.</p>
+        </article>
+
+        <article class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M6 32V14l14-8 14 8v18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+              <path d="M6 32h28" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M16 32V20h8v12" stroke="currentColor" stroke-width="1.6" fill="none"/>
+            </svg>
+          </div>
+          <h3>Office Visits</h3>
+          <p>We come to them. The desk. The whiteboard. The chaos.</p>
+        </article>
+
+        <article class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M14 32h12M16 32v-3a8 8 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M20 8v3M30 12l-2 2M10 12l2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>What We Learn</h3>
+          <p>The lessons you only get from people actually building.</p>
+        </article>
+
+        <article class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="9" y="9" width="22" height="22" rx="3" stroke="currentColor" stroke-width="1.6" fill="none"/>
+              <path d="M14 16h12M14 21h12M14 26h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>The NYC Diaries</h3>
+          <p>Two Germans figuring out a city, in real time.</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Instagram DM bubble -->
+    <aside class="dm" id="dmBubble" aria-label="Example outreach DM">
+      <div class="dm__head">
+        <div class="dm__avatar">
+          <img src="extrashot-bean.svg" alt="" />
+        </div>
+        <div>
+          <p class="dm__name">extrashotnyc</p>
+          <p class="dm__meta">Active now · DM</p>
+        </div>
+      </div>
+      <div class="dm__bubble">
+        Hey! My friend and I are building a community in NYC through a coffee chat series. We film short reels of conversations with interesting people and their offices. Would you be open to being one of our features?
+      </div>
+      <p class="dm__time">delivered · just now</p>
+    </aside>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="who" class="section section--who reveal">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">Who we are</p>
+        <h2 class="h2">Two Germans, building a network from 0, one coffee at a time.</h2>
+      </div>
+
+      <div class="people">
+        <article class="person">
+          <div class="person__badge">the builder</div>
+          <h3 class="person__name">Giulia</h3>
+          <p class="person__role">Technology Management @ Columbia</p>
+          <ul class="person__list">
+            <li>ex-McKinsey</li>
+            <li>AI &amp; product</li>
+          </ul>
+          <p class="person__order"><span>Coffee order:</span> almond flat white</p>
+        </article>
+
+        <article class="person">
+          <div class="person__badge">the connector</div>
+          <h3 class="person__name">Lisa</h3>
+          <p class="person__role">Human Capital Management @ Columbia</p>
+          <ul class="person__list">
+            <li>ex-PwC</li>
+            <li>talent &amp; culture</li>
+          </ul>
+          <p class="person__order"><span>Coffee order:</span> iced vanilla oat latte</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COFFEE COUNTER -->
+  <section id="counter" class="section section--counter reveal">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">By the cup</p>
+        <h2 class="h2">Coffee counter.</h2>
+      </div>
+
+      <div class="counter">
+        <span class="counter__num" id="counterNum" data-target="3">0</span>
+        <p class="counter__label">coffees so far.</p>
+      </div>
+
+      <div class="chats">
+        <article class="chat">
+          <p class="chat__num">01</p>
+          <h3 class="chat__name">Sandstone</h3>
+          <p class="chat__line">A construction-tech team rebuilding how housing gets built.</p>
+        </article>
+        <article class="chat">
+          <p class="chat__num">02</p>
+          <h3 class="chat__name">Build.Inc</h3>
+          <p class="chat__line">AI for land development — the unsexy backbone of every new project.</p>
+        </article>
+        <article class="chat">
+          <p class="chat__num">03</p>
+          <h3 class="chat__name">Starlife</h3>
+          <p class="chat__line">Where consumer culture and community get built in public.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED FOUNDERS -->
+  <section id="founders" class="section section--founders reveal">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">Featured founders</p>
+        <h2 class="h2">Past chats &amp; what's brewing next.</h2>
+      </div>
+
+      <div class="founders">
+        <article class="founder founder--past">
+          <p class="founder__status">past</p>
+          <h3 class="founder__company">Sandstone</h3>
+          <p class="founder__line">Construction tech, reimagined from the ground up.</p>
+        </article>
+        <article class="founder founder--past">
+          <p class="founder__status">past</p>
+          <h3 class="founder__company">Build.Inc</h3>
+          <p class="founder__line">AI-powered land development at scale.</p>
+        </article>
+        <article class="founder founder--past">
+          <p class="founder__status">past</p>
+          <h3 class="founder__company">Starlife</h3>
+          <p class="founder__line">Consumer brand-building as a community sport.</p>
+        </article>
+        <article class="founder founder--soon">
+          <p class="founder__status">soon</p>
+          <h3 class="founder__company">222</h3>
+          <p class="founder__line">A new model for IRL connection in big cities.</p>
+        </article>
+        <article class="founder founder--soon">
+          <p class="founder__status">soon</p>
+          <h3 class="founder__company">Mine</h3>
+          <p class="founder__line">Personal data, finally on the user's side.</p>
+        </article>
+        <article class="founder founder--soon">
+          <p class="founder__status">soon</p>
+          <h3 class="founder__company">Rodeo</h3>
+          <p class="founder__line">Building cult software for creative operators.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section section--mission reveal">
+    <div class="container container--narrow">
+      <p class="kicker">The mission</p>
+      <p class="mission">
+        We moved to New York from Germany and didn't know a single person. Everyone tells you networking is everything. Nobody shows you what that looks like.
+        <br /><br />
+        So we're documenting it.
+      </p>
+      <p class="mission__count">
+        <span>100</span> coffees. <span>One</span> city. <span>One</span> espresso at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#top" class="footer__brand">
+          <img src="extrashot-bean.svg" alt="" />
+          <span>Extra Shot NYC</span>
+        </a>
+        <p class="footer__line">From Germany. Now in NYC. Building everything from scratch.</p>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__label">Follow</p>
+        <a href="https://instagram.com/extrashotnyc" target="_blank" rel="noopener">@extrashotnyc</a>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__label">Say hi</p>
+        <a href="mailto:hello@extrashotnyc.com">hello@extrashotnyc.com</a>
+      </div>
+    </div>
+
+    <p class="footer__bottom">© <span id="year"></span> Extra Shot NYC · Made with espresso in New York</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
