@@ -109,6 +109,44 @@
     counterEl.textContent = counterEl.dataset.target;
   }
 
+  // ---------- Mobile nav drawer ----------
+  const navToggle = document.getElementById('navToggle');
+  const navDrawer = document.getElementById('navDrawer');
+
+  const closeDrawer = () => {
+    if (!navDrawer || !navToggle) return;
+    navDrawer.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', 'Open menu');
+    navDrawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  const openDrawer = () => {
+    if (!navDrawer || !navToggle) return;
+    navDrawer.classList.add('is-open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    navToggle.setAttribute('aria-label', 'Close menu');
+    navDrawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  if (navToggle && navDrawer) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      isOpen ? closeDrawer() : openDrawer();
+    });
+    navDrawer.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => closeDrawer());
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
+    });
+    // Close drawer if window resizes back to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720) closeDrawer();
+    });
+  }
+
   // ---------- Smooth scroll for in-page nav (extra polish on older Safari) ----------
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', (e) => {
