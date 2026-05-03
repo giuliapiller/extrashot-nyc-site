@@ -485,7 +485,7 @@ button { font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparen
 /* ---------- Who we are ---------- */
 .who__photo {
   margin: 0 auto clamp(40px, 6vw, 64px);
-  max-width: 520px;
+  max-width: 760px;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
