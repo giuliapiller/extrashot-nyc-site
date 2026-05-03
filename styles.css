@@ -505,7 +505,7 @@ button { font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparen
 
 .people {
   display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
+  grid-template-columns: 1fr 1.8fr 1fr;
   gap: 20px;
   align-items: stretch;
 }
