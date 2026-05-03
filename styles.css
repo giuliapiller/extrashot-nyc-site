@@ -483,6 +483,24 @@ button { font: inherit; cursor: pointer; -webkit-tap-highlight-color: transparen
 }
 
 /* ---------- Who we are ---------- */
+.who__photo {
+  margin: 0 auto clamp(40px, 6vw, 64px);
+  max-width: 520px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow:
+    0 30px 80px -30px rgba(0, 0, 0, 0.7),
+    0 8px 30px -10px rgba(196, 135, 59, 0.18);
+  background: var(--card);
+}
+.who__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.92) contrast(1.02);
+}
+
 .people {
   display: grid;
   grid-template-columns: 1fr 1fr;
