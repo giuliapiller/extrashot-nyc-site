@@ -674,6 +674,13 @@ a.founder:hover {
   transition: color 200ms ease, transform 200ms ease;
 }
 a.founder:hover .founder__arrow { color: var(--gold); transform: translate(2px, -2px); }
+
+.founder--mystery .founder__company {
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  opacity: 0.85;
+}
+.founder--mystery .founder__line { color: var(--muted); }
 .founder__status {
   margin: 0;
   font-size: 11px;
